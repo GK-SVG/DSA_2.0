@@ -1,4 +1,3 @@
-// C/C++ program to solve fractional Knapsack Problem
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -30,18 +29,6 @@ double fractionalKnapsack(int W, struct Item arr[], int n)
 {
 	// sorting Item on basis of ratio
 	sort(arr, arr + n, cmp);
-
-	// Uncomment to see new order of Items with their
-	// ratio
-	/*
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i].value << " " << arr[i].weight << " :
-	"
-			<< ((double)arr[i].value / arr[i].weight) <<
-	endl;
-	}
-	*/
 
 	int curWeight = 0; // Current weight in knapsack
 	double finalvalue = 0.0; // Result (value in Knapsack)
